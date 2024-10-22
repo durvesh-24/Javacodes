@@ -5,13 +5,13 @@ class Palindrome {
 
     static boolean ispalindrome(int x) {
         int temp = x;
-        int rev = 0;
+        int rv = 0;
         while(x > 0) {
             int digit = x % 10;
             rev = (rev * 10) + digit;
             x = x / 10;   
         }
-         if(rev == temp)
+         if(rv == temp)
          {
             return true;
          }
